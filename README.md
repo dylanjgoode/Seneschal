@@ -2,6 +2,11 @@
 
 An AI purchasing agent that automates cross-border supplier payments over stablecoin rails. Built on Tempo (Stripe's L1).
 
+<p align="center">
+  <img src="public/landing.png" alt="Seneschal Landing Page" width="49%">
+  <img src="public/dashboard.png" alt="Seneschal Dashboard" width="49%">
+</p>
+
 This is a v0 prototype. It does one thing: takes a restock signal, checks a spend policy, and settles a payment to a supplier wallet in under 5 seconds. No card networks, no correspondent banks, no holds.
 
 It exists to produce data showing the delta between card rails and stablecoin rails for automated international supplier payments. If the delta is real, v1 replaces the concierge layer with software and gives operators a dashboard to manage their own suppliers, limits, and exceptions.
