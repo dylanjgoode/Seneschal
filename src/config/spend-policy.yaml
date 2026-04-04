@@ -1,0 +1,18 @@
+operator: acme-store
+wallet: "0xABC123"
+suppliers:
+  - id: supplier-shenzhen-a
+    name: Shenzhen Textiles Co.
+    wallet: "0xDEF456"
+    max_per_transaction: 5000
+    max_per_month: 25000
+    approved: true
+  - id: supplier-guangzhou-b
+    name: Guangzhou Electronics Ltd.
+    wallet: "0xGHI789"
+    max_per_transaction: 3000
+    max_per_month: 15000
+    approved: true
+global:
+  require_approval_above: 10000
+  alert_email: operator@acme.com
