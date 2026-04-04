@@ -4,7 +4,7 @@ An AI purchasing agent that automates cross-border supplier payments over stable
 
 <p align="center">
   <img src="public/landing.png" alt="Seneschal Landing Page" width="49%">
-  <img src="public/dashboard.png" alt="Seneschal Dashboard" width="49%">
+  <img src="public/hero.png" alt="Seneschal Hero" width="49%">
 </p>
 
 This is a v0 prototype. It does one thing: takes a restock signal, checks a spend policy, and settles a payment to a supplier wallet in under 5 seconds. No card networks, no correspondent banks, no holds.
