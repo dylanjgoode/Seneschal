@@ -3,7 +3,7 @@
 An AI purchasing agent that automates cross-border supplier payments over stablecoin rails. Built on Tempo (Stripe's L1).
 
 <p align="center">
-  <img src="public/landing.png" alt="Seneschal Landing Page" width="49%">
+  <img src="public/dashboard.png" alt="Seneschal Dashboard" width="49%">
   <img src="public/hero.png" alt="Seneschal Hero" width="49%">
 </p>
 
