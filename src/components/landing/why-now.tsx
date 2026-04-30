@@ -5,7 +5,7 @@ const forces = [
     label: "01",
     title: "Settlement infrastructure matured",
     description:
-      "Stablecoin rails now settle in seconds, not days. The pipes exist. Major platforms are already plugged in.",
+      "Stablecoin rails now settle in seconds, not days. Seneschal runs on Tempo — Stripe's settlement blockchain — the same infrastructure major platforms are already plugged into.",
   },
   {
     label: "02",
