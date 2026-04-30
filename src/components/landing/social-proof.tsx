@@ -75,16 +75,16 @@ export function SocialProof() {
             </p>
 
             <blockquote className="text-[clamp(1.1rem,2vw,1.4rem)] leading-relaxed text-white/80 font-medium mb-8 border-l-2 border-white/20 pl-6">
-              &ldquo;Finally stopped losing production slots. It just
-              runs.&rdquo;
+              &ldquo;It used to take a day of back-and-forth to get a payment
+              through. Now I don&apos;t think about it.&rdquo;
             </blockquote>
 
             <div className="space-y-4 text-[15px] leading-relaxed text-white/50 max-w-xl">
               <p>
                 She&apos;d been sourcing from the same Guangdong manufacturer
-                for three years. In Q4, a $12,400 payment for spring inventory
-                was flagged and blocked — twice. Her supplier gave her
-                production slot to another buyer. She lost the season.
+                for three years. Payments would go through — eventually — but
+                nearly every quarter something got flagged. A day on the phone,
+                a workaround, a delayed shipment.
               </p>
               <p>
                 She onboarded Seneschal in January. Since then, 14 supplier
