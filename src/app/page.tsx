@@ -1,6 +1,7 @@
 import { Nav } from "@/components/landing/nav";
 import { Hero } from "@/components/landing/hero";
 import { WhyNow } from "@/components/landing/why-now";
+import { SocialProof } from "@/components/landing/social-proof";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { BottomCta } from "@/components/landing/bottom-cta";
 import { Faq } from "@/components/landing/faq";
@@ -12,6 +13,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <WhyNow />
+      <SocialProof />
       <HowItWorks />
       <BottomCta />
       <Faq />

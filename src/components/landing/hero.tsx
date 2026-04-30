@@ -1,10 +1,32 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Reveal } from "./animate";
 
 export function Hero() {
   return (
-    <section className="relative px-6 md:px-10 pt-36 pb-20 md:pt-44 md:pb-24">
-      <div className="mx-auto max-w-6xl">
+    <section className="relative px-6 md:px-10 pt-36 pb-20 md:pt-44 md:pb-24 overflow-hidden bg-black">
+      {/* Castle background */}
+      <div
+        className="absolute inset-0 flex items-end justify-end pointer-events-none"
+        style={{
+          maskImage: "linear-gradient(to right, transparent 0%, black 35%, black 100%)",
+          WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 35%, black 100%)",
+        }}
+      >
+        <Image
+          src="/castle2.png"
+          alt=""
+          width={512}
+          height={240}
+          className="w-[90vw] max-w-[1100px] h-auto object-contain object-bottom"
+          style={{ imageRendering: "pixelated" }}
+          priority
+          aria-hidden
+        />
+      </div>
+
+      {/* Content */}
+      <div className="relative mx-auto max-w-6xl">
         <Reveal stagger>
           <div className="mb-12">
             <h1 className="font-mono text-[clamp(2.5rem,7vw,5.5rem)] font-bold leading-[0.95] tracking-tight text-white">

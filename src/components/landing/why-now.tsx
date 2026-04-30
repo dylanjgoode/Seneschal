@@ -25,7 +25,7 @@ export function WhyNow() {
   return (
     <section className="px-6 md:px-10 py-24 border-t border-white/[0.06]">
       <div className="mx-auto max-w-6xl">
-        
+
         {/* The Problem */}
         <div className="mb-24 max-w-3xl">
           <Reveal stagger>
@@ -39,7 +39,7 @@ export function WhyNow() {
               supplier almost gave your production slot to someone else.
             </p>
             <p className="border-l-2 border-white/40 pl-6 md:pl-8 text-[clamp(1.25rem,2vw,1.75rem)] leading-relaxed text-white font-medium">
-              And you know it&apos;s going to happen again.
+              You know it&apos;s going to happen again.
             </p>
           </Reveal>
         </div>

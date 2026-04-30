@@ -12,6 +12,12 @@ export function Nav() {
         </Link>
         <div className="flex items-center gap-6">
           <Link
+            href="/docs"
+            className="font-mono text-[13px] text-white/60 hover:text-white transition-colors"
+          >
+            Docs
+          </Link>
+          <Link
             href="/login"
             className="font-mono text-[13px] text-white/60 hover:text-white transition-colors"
           >
