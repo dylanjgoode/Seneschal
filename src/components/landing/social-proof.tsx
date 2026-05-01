@@ -81,10 +81,8 @@ export function SocialProof() {
 
             <div className="space-y-4 text-[15px] leading-relaxed text-white/50 max-w-xl">
               <p>
-                She&apos;d been sourcing from the same Guangdong manufacturer
-                for three years. Payments would go through — eventually — but
-                nearly every quarter something got flagged. A day on the phone,
-                a workaround, a delayed shipment.
+                Shannon has been sourcing from the same Guangdong manufacturer
+                for three years. Payments would go through, but nearly every quarter something got flagged. A day on the phone, a workaround, a delayed shipment.
               </p>
               <p>
                 She onboarded Seneschal in January. Since then, 14 supplier

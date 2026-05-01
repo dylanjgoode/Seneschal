@@ -1,20 +1,52 @@
+import { ReactNode } from "react";
 import { Reveal } from "./animate";
 
-const questions = [
+const questions: { question: string; answer: ReactNode }[] = [
   {
-    question: "How does the payment actually work?",
+    question: "What does getting started actually look like?",
     answer:
-      "Payments settle over stablecoin (USDC) rails rather than card networks. The supplier receives funds directly to a verified wallet. Settlement typically takes under two minutes. You never need to touch the underlying mechanism.",
+      "We start by mapping your existing international supplier payments — volumes, currencies, which ones get blocked most. From there, our team contacts your suppliers directly and handles the migration from traditional rails to stablecoin wallets. Once they're set up, you're on the platform: rules configured, payments automated. Most operators are live within a week.",
   },
   {
-    question: "Do my suppliers need to do anything?",
+    question: "How does the payment actually work?",
+    answer: (
+      <>
+        When a restock signal comes in, Seneschal checks it against your spend
+        policy and initiates a stablecoin transfer over{" "}
+        <a
+          href="https://tempo.xyz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/70 underline underline-offset-2 decoration-white/30 hover:decoration-white/60 transition-colors"
+        >
+          Tempo
+        </a>{" "}
+        — Stripe&apos;s settlement blockchain. The supplier receives funds
+        directly to their verified wallet, typically within two minutes. You
+        never interact with the underlying mechanism unless an exception
+        surfaces.
+      </>
+    ),
+  },
+  {
+    question: "Do my suppliers need to hold crypto?",
     answer:
-      "Yes \u2014 they need a compatible wallet address. Our team handles supplier verification and setup as part of onboarding. In practice, this takes less than a day for most suppliers.",
+      "No. Suppliers receive funds to a verified wallet address, but most convert to local fiat immediately through standard on/off ramps. Our team handles supplier verification and wallet setup as part of onboarding — it typically takes less than a day.",
+  },
+  {
+    question: "What happens if a payment fails or something looks wrong?",
+    answer:
+      "If a transfer fails, Seneschal holds the payment and routes it to your exceptions queue — the same flow as a policy breach. You get a notification with the details and a single decision to make. Nothing settles without your approval once it's flagged. Every action is written to an append-only audit log.",
+  },
+  {
+    question: "How do I set my spending rules?",
+    answer:
+      "Rules are defined in a simple config: approved supplier list, per-transaction limits, daily caps, and approval thresholds. Anything inside policy executes automatically. Anything outside comes to you as an exception. You can update rules at any time — changes take effect on the next transaction.",
   },
   {
     question: "Is this regulated?",
     answer:
-      "Yes, we operate within applicable money transmission frameworks. Longer answer available on request.",
+      "Yes. We operate as a registered Money Services Business (MSB) under FinCEN, with AML and KYC controls applied at onboarding for both operators and suppliers. We're happy to provide compliance documentation during due diligence.",
   },
 ];
 

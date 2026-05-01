@@ -1,17 +1,31 @@
+import { ReactNode } from "react";
 import { Reveal } from "./animate";
 
-const forces = [
+const forces: { label: string; title: string; description: ReactNode }[] = [
   {
     label: "01",
     title: "Settlement infrastructure matured",
-    description:
-      "Stablecoin rails now settle in seconds, not days. Seneschal runs on Tempo — Stripe's settlement blockchain — the same infrastructure major platforms are already plugged into.",
+    description: (
+      <>
+        Stablecoin rails now settle in seconds, not days. Seneschal runs on{" "}
+        <a
+          href="https://tempo.xyz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/90 underline underline-offset-2 decoration-white/30 hover:decoration-white/60 transition-colors"
+        >
+          Tempo
+        </a>{" "}
+        — Stripe&apos;s settlement blockchain — the same infrastructure major
+        platforms are already plugged into.
+      </>
+    ),
   },
   {
     label: "02",
     title: "AI agents can execute workflows",
     description:
-      "Agents are now capable enough to handle structured purchasing workflows end-to-end \u2014 from signal to settlement.",
+      "Agents are now for the first time capable enough to handle structured purchasing workflows end-to-end.",
   },
   {
     label: "03",
